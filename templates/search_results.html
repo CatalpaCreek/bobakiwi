@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'search_results.js') }}"></script>
+    
+<script>
+    let data = {{data|tojson}} 
+    let result_tea = {{result_tea|tojson}} 
+    let search_name = {{search_name|tojson}} 
+    console.log(search_name)
+</script>
+
+<div id = "result_tea"></div>
+<div id = "result_tea2"></div>
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'edit.js') }}"></script>
+<script>
+    let data = {{data|tojson}}
+    console.log(data)
+</script>
+
+<form action="/update/{{ data[0].id }}" method="post">
+
+    <div class="form-group">
+        <label for="name">title<a class="left_space" href="#" onclick="removeAttr('title')">edit</a></label>
+        <input type="text" class="form-control" id="title" name="title" disabled placeholder="input name of tea shop">
+    </div>
+
+    <div class="form-group">
+        <label for="name">image link<a class="left_space" href="#" onclick="removeAttr('Image')">edit</a></label>
+        <input type="text" class="form-control" id="Image" name="Image" disabled placeholder="input ImageLink">
+    </div>
+
+    <div class="form-group">
+        <label for="name">description <a class="left_space" href="#" onclick="removeAttr('description')">edit</a></label>
+        <input type="text" class="form-control" id="description" name="description" disabled placeholder="input description">
+    </div>
+    
+    <div class="form-group">
+        <label for="name">location <a class="left_space" href="#" onclick="removeAttr('location')">edit</a></label>
+        <input type="text" class="form-control" id="location" name="location" disabled placeholder="input general location">
+    </div>
+
+    <div class="form-group">
+        <label for="name">address <a class="left_space" href="#" onclick="removeAttr('address')">edit</a></label>
+        <input type="text" class="form-control" id="address" name="address" disabled placeholder="input address">
+
+    </div>
+        <div class="form-group">
+        <label for="name" >hours <a class="left_space" href="#" onclick="removeAttr('hours')">edit</a></label>
+        <input type="text" class="form-control" id="hours" name="hours" disabled placeholder="input hours">
+    </div>
+    
+    <div class="form-group">
+        <label for="name">rating <a class="left_space" href="#" onclick="removeAttr('rating')">edit</a></label>
+        <input type="number" class="form-control" id="rating" name="rating" disabled placeholder="input rating, type should be number">
+    </div>
+    
+    <div class="form-group">
+        <label for="name">popular orders <a class="left_space" href="#" onclick="removeAttr('popular_orders')">edit</a></label>
+        <input type="text" class="form-control" id="popular_orders" name="popular_orders" disabled placeholder="input popular orders, separate by comma">
+    </div>
+    
+    <button type="submit" class="btn btn-primary mybutton" >Submit</button>
+    <button type="button" class="btn btn-warning mybutton" onclick="tochanges({{ data[0].id }})">Discard Changes</button>
+
+</form>
+{% endblock %}
+
+
+<script>
+
+
+
+
+</script>

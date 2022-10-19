@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'add.js') }}"></script>
+
+  <div id="main"></div>
+
+  <div class="form-group">
+    <label for="name">title</label>
+    <input type="text" class="form-control left_space" id="title" placeholder="input name of tea shop">
+  </div>
+
+  <div class="form-group">
+    <label for="name">image link</label>
+    <input type="text" class="form-control left_space" id="Image" placeholder="input image link">
+  </div>
+
+  <div class="form-group">
+    <label for="name">description</label>
+    <input type="text" class="form-control left_space" id="description" placeholder="input description">
+  </div>
+  
+  <div class="form-group">
+    <label for="name">location</label>
+    <input type="text" class="form-control left_space" id="location" placeholder="input general location">
+  </div>
+
+  <div class="form-group">
+    <label for="name">address</label>
+    <input type="text" class="form-control left_space" id="address" placeholder="input address">
+  </div>
+
+  <div class="form-group">
+    <label for="name">hours</label>
+    <input type="text" class="form-control left_space" id="hours" placeholder="input hours">
+  </div>
+  
+  <div class="form-group">
+    <label for="name">rating</label>
+    <input type="number" class="form-control left_space" id="rating" placeholder="input Rating, type should be number">
+  </div>
+  
+  <div class="form-group">
+    <label for="name">popular orders</label>
+    <input type="text" class="form-control left_space" id="popular_orders" placeholder="input popular orders, separate by comma">
+  </div>
+  
+  <button type="button" onclick="upload()" class="btn mybutton accent_color">Submit</button>
+    
+{% endblock %}
+
+<script></script>

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'homepage.js') }}"></script>
+    
+<script>
+    let data = {{data|tojson}} 
+    let popular_tea = {{popular_tea|tojson}} 
+    let result_tea = {{result_tea|tojson}} 
+    let search_name = {{search_name|tojson}} 
+    console.log(data)
+</script>
+
+<div class = "bigger">JOIN ME FOR A BUBBLE TEA HUNT! </div>
+
+<img src = "https://discoverkl.com/wp-content/uploads/sites/20/2019/06/SS15-Bubble-Tea-Street-Review-Ranking-Shifen-Station-Black-Whale-Tea-Cha-Wan-Jia-Daboba-Moge-Tee-Mui-Tea-OneZo-Tealive-Xing-Fu-Tang-1024x536.jpg" alt = "bubble tea hunt picture" class = "img pic">
+
+<div id = "popular"></div>
+
+{% endblock %}
