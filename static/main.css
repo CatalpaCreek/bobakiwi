@@ -1,0 +1,88 @@
+.hello_div{
+    color: blue;
+}
+.pic{
+    width: 100%;
+}
+.small_pic{
+    width: 50%;
+}
+.star{
+    width: 10%;
+}
+.mybutton{
+    width: 200px;
+    height: 50px;
+}
+.container{
+    margin: 30px;
+}
+.accent_color{
+    /*background-color: #c1905e;*/
+    background-color: #f0c88c;
+}
+.accent_text{
+    color: 	#a57545;
+}
+.grey_text{
+    color: rgb(65, 65, 65);
+}
+.highlight{
+    background-color: yellow;
+}
+.base_color{
+    background-color: #fff5e3;
+}
+.lightgrey{
+    background-color: rgb(236, 235, 235);
+}
+.darkgrey{
+    background-color: rgb(189, 187, 187);
+}
+.darkblue{
+    background-color: rgb(2, 125, 182);
+}
+.greybox {
+    background-color: rgb(236, 235, 235);
+    padding: 40px;
+}
+.lightyellow {
+    background-color: lightyellow;
+}
+.medium{
+    font-size: 19px;
+    align-items: flex-start;
+}
+.big{
+    font-size: 24px;
+}
+.bigger{
+    font-size: 30px;
+    font-weight: 300;
+}
+.faint{
+    font-weight: 200;
+}
+.dark{
+    font-weight: bold;
+}
+.left_space{
+    margin-left: 25px
+}
+.small_space{
+    margin: 10px;
+    margin-top: 20px;
+}    
+.big_space{
+    margin: 10px;
+    padding: 50px;
+    width: 100%;
+}
+.posts{
+    width: 100%;
+    border: solid lightgrey 1px;
+    cursor: move;
+}
+#client input {
+    width: 100%;
+}
